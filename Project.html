@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Hospital</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+    background-color: #FFFFFF;
+}
+
+
+header {
+    background-color: #0A3D62;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1ABC9C;
+}
+
+
+#home {
+    background: linear-gradient(
+        rgba(10,61,98,0.7),
+        rgba(10,61,98,0.7)
+    );
+    background-image: url("https://thumbs.dreamstime.com/b/modern-hospital-entrance-glass-doors-concrete-steps-greenery-front-sleek-building-facade-view-contemporary-422854707.jpg?w=1400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 30px;
+
+}
+
+
+section {
+    padding: 40px;
+}
+
+#services,
+#about,
+#contact {
+    background-color: #F5F7FA;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #16A085;
+}
+
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+}
+
+
+footer {
+    background-color: #1E272E;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>City Hospital</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section id="home">
+    <h2>Welcome to City Hospital</h2>
+    <p>Your health is our priority</p>
+    <button onclick="showMessage()">Book Appointment</button>
+</section>
+
+
+<section id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Emergency Care</li>
+        <li>24/7 Pharmacy</li>
+        <li>Qualified Doctors</li>
+        <li>Modern Laboratories</li>
+    </ul>
+</section>
+
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        City Hospital is a multi-specialty hospital providing
+        quality healthcare services for more than 10 years.
+    </p>
+    <p>
+        Our mission is to provide affordable and best medical
+        facilities to everyone.
+    </p>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form onsubmit="return submitForm()">
+        <label>Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 City Hospital</p>
+</footer>
+
+
+<script>
+    function showMessage() {
+        alert("Appointment booking will start soon!");
+    }
+
+    function submitForm() {
+        alert("Thank you! Your message has been submitted.");
+        return false;
+    }
+</script>
+
+</body>
+</html>
